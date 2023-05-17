@@ -174,8 +174,8 @@ export const projectDetails = [
     image: bubbles_shoot,
     description: `This is a simple bubbles shoot game made for fun.`,
     techstack: "HTML Canvas, CSS, JavaScript",
-    previewLink: "https://task-maneger-app.netlify.app/",
-    githubLink: "https://github.com/Abhishek-Kolpkar/Task-Manager",
+    previewLink: "https://bubbles-shoot.netlify.app/",
+    githubLink: "https://github.com/Abhishek-Kolpkar/Bubbles-Shoot",
   },
   {
     title: "Canva Drawing App",
