@@ -1,7 +1,54 @@
-const About = () => {
-  return(
-    <></>
-  )
-}
+import React from "react";
+import Work from "@/components/Work";
+import { eduDetails, personalDetails, workDetails } from "@/data";
 
-export default About
+const About = () => {
+  return (
+    <main className="container mx-auto max-width pb-20 ">
+      <section>
+        <h1 className="text-2xl dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold text-slate-700 underline">
+          About Me
+        </h1>
+        <ul className="text-content py-8 lg:max-w-3xl list-disc list-inside">
+          {personalDetails.about.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      </section>
+      <section>
+        <h1 className="text-2xl dark:text-light-heading md:text-3xl xl:text-4xl xl:leading-tight font-bold text-slate-700">
+          Work Experience
+        </h1>
+        {React.Children.toArray(
+          workDetails.map(({ Position, Company, Location, Type, Duration }) => (
+            <Work
+              position={Position}
+              company={Company}
+              location={Location}
+              type={Type}
+              duration={Duration}
+            />
+          ))
+        )}
+      </section>
+      <section>
+        <h1 className="text-2xl pt-10 dark:text-light-heading md:text-3xl xl:text-4xl xl:leading-tight font-bold text-slate-700">
+          Education
+        </h1>
+        {React.Children.toArray(
+          eduDetails.map(({ Position, Company, Location, Type, Duration }) => (
+            <Work
+              position={Position}
+              company={Company}
+              location={Location}
+              type={Type}
+              duration={Duration}
+            />
+          ))
+        )}
+      </section>
+    </main>
+  );
+};
+
+export default About;
