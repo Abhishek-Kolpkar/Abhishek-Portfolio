@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+/* show custom scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  width: 0.4em;
+  border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #a1aeb1;
+}
+
+.max-width {
+  @apply lg:mx-auto lg:px-24 xl:px-48 px-5;
+}
+.bg-gradient {
+  @apply bg-gradient-to-r from-sky-500 via-purple-500 to-pink-600;
+}
+.text-gradient {
+  @apply bg-clip-text bg-gradient text-transparent;
+}
+.section {
+  @apply pt-28 xl:pt-28 2xl:pt-44;
+}
+.text-content {
+  @apply dark:text-light-content text-dark-content;
+}
