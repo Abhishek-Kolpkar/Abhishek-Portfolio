@@ -218,7 +218,7 @@ export const projectDetails = [
     githubLink: "https://github.com/Abhishek-Kolpkar/RedStore",
   },
   {
-    title: "Barber Hair Studio",
+    title: "Hair Studio",
     image: barber_studio,
     description: `This is a single page responsive website UI Design.`,
     techstack: "HTML, CSS",
