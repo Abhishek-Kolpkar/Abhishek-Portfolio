@@ -1,9 +1,9 @@
-export default function Home() {
+function Home() {
   return (
     <>
       <h1>Portfolio</h1>
-
-      <img src="/next.svg" alt="" />
     </>
   )
 }
+
+export default Home
