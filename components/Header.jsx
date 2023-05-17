@@ -53,12 +53,12 @@ const Header = () => {
             </Link>
           </li>
           <li className="btn bg-greenbg text-cyan-600 text-xs font-bold rounded-3xl px-3 py-1 min-w-fit">
-            <a
-              href="/Abhishek_Kolapkar.pdf"
+            <Link
+              href="/Abhishek_Kolapkar_Resume.pdf"
               download="Abhishek_Kolapkar_Resume"
             >
               Download Resume
-            </a>
+            </Link>
           </li>
         </ul>
         <ul className="flex justify-evenly items-center my-5 md:my-0 md:space-x-5 md:mr-5">
